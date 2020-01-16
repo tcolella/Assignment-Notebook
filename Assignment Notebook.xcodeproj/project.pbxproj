@@ -16,6 +16,7 @@
 		7A698CC423D0C80500526157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A698CC223D0C80500526157 /* LaunchScreen.storyboard */; };
 		7A698CCF23D0C80600526157 /* Assignment_NotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A698CCE23D0C80600526157 /* Assignment_NotebookTests.swift */; };
 		7A698CDA23D0C80600526157 /* Assignment_NotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A698CD923D0C80600526157 /* Assignment_NotebookUITests.swift */; };
+		7A698CE823D0C88B00526157 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A698CE723D0C88B00526157 /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A698CD523D0C80600526157 /* Assignment NotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assignment NotebookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A698CD923D0C80600526157 /* Assignment_NotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_NotebookUITests.swift; sourceTree = "<group>"; };
 		7A698CDB23D0C80600526157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A698CE723D0C88B00526157 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7A698CB523D0C7FF00526157 /* AppDelegate.swift */,
 				7A698CB723D0C7FF00526157 /* SceneDelegate.swift */,
 				7A698CB923D0C7FF00526157 /* MasterViewController.swift */,
+				7A698CE723D0C88B00526157 /* Assignment.swift */,
 				7A698CBB23D0C7FF00526157 /* DetailViewController.swift */,
 				7A698CBD23D0C7FF00526157 /* Main.storyboard */,
 				7A698CC023D0C80500526157 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				7A698CB623D0C7FF00526157 /* AppDelegate.swift in Sources */,
 				7A698CB823D0C7FF00526157 /* SceneDelegate.swift in Sources */,
 				7A698CBA23D0C7FF00526157 /* MasterViewController.swift in Sources */,
+				7A698CE823D0C88B00526157 /* Assignment.swift in Sources */,
 				7A698CBC23D0C7FF00526157 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
