@@ -9,6 +9,7 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
+    
     var detailViewController: DetailViewController? = nil
     var assignments = [Assignment]()
     let defaults = UserDefaults.standard
@@ -17,7 +18,7 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
-        
+    
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
@@ -49,11 +50,14 @@ class MasterViewController: UITableViewController {
         }
         alert.addTextField { (textField) in
             textField.placeholder = "Due Date"
-            textField.keyboardType = .numberPad
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Description"
+            
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
-        let insertAction = UIAlertAction(title: "Add", style: .default) { (action) in
+        let insertAction = UIAlertAction(title: "Ok", style: .default) { (action) in
             let nameTextField = alert.textFields![0] as UITextField
             let subjectTextField = alert.textFields![1] as UITextField
             let dueDateTextField = alert.textFields![2] as UITextField
@@ -66,6 +70,7 @@ class MasterViewController: UITableViewController {
             self.assignments.append(assignment);
             self.tableView.reloadData()
             self.saveData()
+            
             
         }
         alert.addAction(insertAction)
